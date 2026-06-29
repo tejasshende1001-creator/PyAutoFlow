@@ -1,0 +1,21 @@
+id,date,region,category,product,revenue,cost,units
+1,2025-01-05,North,Electronics,Widget Pro,1500.00,900.00,10
+2,2025-01-12,South,Clothing,Shirt Deluxe,2300.50,1100.00,25
+3,2025-01-20,North,Electronics,Widget Pro,800.00,480.00,8
+4,2025-02-03,East,Furniture,Office Chair,3200.00,1920.00,40
+5,2025-02-14,West,Clothing,Jacket X,4100.00,2460.00,15
+6,2025-02-28,North,Electronics,Tablet Mini,950.00,570.00,5
+7,2025-03-07,South,Furniture,Standing Desk,6200.00,3720.00,12
+8,2025-03-15,East,Electronics,Laptop Ultra,12000.00,7200.00,6
+9,2025-03-22,West,Clothing,Shirt Deluxe,1800.00,900.00,20
+10,2025-04-01,North,Furniture,Bookshelf,750.00,450.00,30
+11,2025-04-10,South,Electronics,Widget Pro,2200.00,1320.00,22
+12,2025-04-18,East,Clothing,Jacket X,3500.00,1750.00,10
+13,2025-05-02,West,Electronics,Tablet Mini,1100.00,660.00,11
+14,2025-05-09,North,Clothing,Shirt Deluxe,900.00,450.00,18
+15,2025-05-20,South,Furniture,Office Chair,4800.00,2880.00,8
+16,2025-06-01,East,Electronics,Laptop Ultra,11500.00,6900.00,4
+17,2025-06-14,West,Furniture,Bookshelf,680.00,408.00,25
+18,2025-06-22,North,Clothing,Jacket X,2700.00,1350.00,9
+19,2025-07-05,South,Electronics,Widget Pro,1650.00,990.00,16
+20,2025-07-18,East,Clothing,Shirt Deluxe,2100.00,1050.00,35

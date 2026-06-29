@@ -1,0 +1,10 @@
+{
+  "input_dir": "data",
+  "output_dir": "output",
+  "log_dir": "logs",
+  "api_base_url": "https://jsonplaceholder.typicode.com",
+  "api_timeout": 30,
+  "report_formats": ["csv", "json", "txt"],
+  "chunk_size": 10000,
+  "decimal_places": 4
+}
