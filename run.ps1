@@ -25,6 +25,7 @@ Commands:
   api       Fetch live data from the demo REST API
   test      Run all unit tests with pytest
   full      Full demo: CSV + group aggregation + all report formats
+  web       Run the Streamlit Web Application locally
   help      Show this message
 "@ -ForegroundColor White
 }
@@ -83,12 +84,19 @@ function Invoke-Full {
     Write-Success "Full demo complete. Reports in output/"
 }
 
+function Invoke-Web {
+    Write-Info "Launching Streamlit Web App..."
+    & $PYTHON -m streamlit run app.py
+}
+
+
 switch ($Command.ToLower()) {
     "csv"  { Invoke-Csv   }
     "json" { Invoke-Json  }
     "api"  { Invoke-Api   }
     "test" { Invoke-Tests }
     "full" { Invoke-Full  }
+    "web"  { Invoke-Web   }
     "help" { Show-Usage   }
     default {
         Write-Warn "Unknown command: '$Command'"

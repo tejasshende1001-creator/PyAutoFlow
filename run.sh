@@ -34,6 +34,7 @@ Commands:
   api       Fetch live data from the demo REST API
   test      Run all unit tests with pytest
   full      Full demo: CSV + group aggregation + all report formats
+  web       Run the Streamlit Web Application locally
   help      Show this message
 
 Environment:
@@ -97,6 +98,12 @@ cmd_full() {
     success "Full demo complete. Reports in output/"
 }
 
+cmd_web() {
+    info "Launching Streamlit Web App..."
+    "$PYTHON" -m streamlit run app.py
+}
+
+
 # ── Dispatcher ────────────────────────────────────────────────────────────────
 COMMAND="${1:-help}"
 shift || true
@@ -107,6 +114,7 @@ case "$COMMAND" in
     api)  cmd_api  "$@" ;;
     test) cmd_test "$@" ;;
     full) cmd_full "$@" ;;
+    web)  cmd_web  "$@" ;;
     help|--help|-h) usage ;;
     *) warn "Unknown command: '$COMMAND'"; usage; exit 1 ;;
 esac
